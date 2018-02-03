@@ -1,1 +1,15 @@
-Hello World!
+{% extends "layout.html" %}
+{% block title %}Hookups💋{% endblock %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+{% endblock %}
+{% block body %}
+    {% raw %}
+        <h1 id="title">{{ message }}</h1>
+    {% endraw %}
+{% endblock %}
