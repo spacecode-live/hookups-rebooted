@@ -32,7 +32,7 @@ This boots and initializes the virtual machine. The `Vagrantfile` in this projec
 vagrant ssh
 ```
 
-This creates an shell into the virtual machine. Now you are all set to begin developing! Once you are done, you can suspend the vagrant environment using `vagrant suspend`, or destroy the box using `vagrant destroy`. For more information regarding how to use Vagrant, feel free to check out their [quickstart documentation]https://www.vagrantup.com/intro/getting-started/index.html.
+This creates an shell into the virtual machine. Now you are all set to begin developing! Once you are done, you can suspend the vagrant environment using `vagrant suspend`, or destroy the box using `vagrant destroy`. For more information regarding how to use Vagrant, feel free to check out their [quickstart documentation](https://www.vagrantup.com/intro/getting-started/index.html).
 
 ## Running the tests
 
