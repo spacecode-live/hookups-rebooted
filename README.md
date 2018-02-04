@@ -32,13 +32,12 @@ Next, you need to install the dependencies with `pip` (`pip2` if you are on
 Arch):
 
 ```bash
-pip install Flask
+pip install Flask flask-socketio eventlet
 ```
 
-Finally, to enable Flask:
-```bash
-export FLASK_APP=hookups.py
-export FLASK_DEBUG=1
+Finally, to run the server:
+```
+export FLASK_APP=./HookupsRebooted/Hookups.py
 flask run
 ```
 
