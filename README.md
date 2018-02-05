@@ -32,7 +32,7 @@ Next, you need to install the dependencies with `pip` (`pip2` if you are on
 Arch):
 
 ```bash
-pip install Flask flask-socketio eventlet
+pip install Flask flask-socketio eventlet pycodestyle
 ```
 
 Finally, to run the server:
