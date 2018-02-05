@@ -36,14 +36,20 @@ pip install Flask flask-socketio eventlet pycodestyle
 ```
 
 Finally, to run the server:
-```
+```bash
 export FLASK_APP=./HookupsRebooted/Hookups.py
 flask run
 ```
 
 ## Running the tests
 
-To be created.
+Running the tests is as easy as running the prepared `run_debug.sh` script:
+
+```bash
+sh run_debug.sh
+```
+
+This script runs both unit and code style tests.
 
 ### Break down into end to end tests
 
