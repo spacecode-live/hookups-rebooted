@@ -1,6 +1,7 @@
 from gender import Gender
 from interest import Interest
 
+
 class Person:
     """Represents a single person with his preferences.
 
@@ -64,3 +65,16 @@ class Person:
     @interest.deleter
     def interest(self):
         del self._interest
+
+    def is_interested_in(self, person):
+        """Checks whether this object could be interested in another person.
+
+        Args:
+            person (Person): Another Person object to check against.
+
+        Returns:
+            bool: Whether these two people can be a match
+        """
+        return (bool)(self.preference & person.gender) & \
+            (bool)(person.preference & self.gender) & \
+            (bool)(self.interest & person.interest)

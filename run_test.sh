@@ -3,16 +3,20 @@
 # Code Style Tests.
 echo "Testing Code style..."
 
-echo "Testing Hookup/ code style..."
-out=$(pycodestyle Hookup/)
+echo "Testing matchmaker/ code style..."
+out=$(pycodestyle matchmaker/)
 if [ "$out" == "" ]; then
 	echo "Success."
+else
+	echo "$out"
 fi
 
 echo "Testing HookupsRebooted/ code style..."
 out=$(pycodestyle HookupsRebooted/)
 if [ "$out" == "" ]; then
 	echo "Success."
+else
+	echo "$out"
 fi
 
 # Unit Tests

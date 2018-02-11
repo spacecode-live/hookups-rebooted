@@ -53,11 +53,23 @@ This script runs both unit and code style tests.
 
 ### Break down into end to end tests
 
-To be created.
+Running the unit tests is very easy with python unittests:
+
+```bash
+python2 -m unittest test.test_Person
+python2 -m unittest test.test_Matchmaker
+```
+
+These will run the unit tests individually.
 
 ### And coding style tests
 
-To be created.
+Running the code style tests:
+
+```bash
+pycodestyle matchmaker # For the matchmaker package
+pycodestyle HookupsRebooted # For the Flask package
+```
 
 ## Deployment
 
@@ -78,7 +90,7 @@ requests.
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available,
-see the [tags on this repository](https://github.com/your/project/tags).
+see the [tags on this repository](https://github.com/UWCCSC/hookups-rebooted/tags).
 
 ## Authors
 
