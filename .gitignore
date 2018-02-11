@@ -1,5 +1,6 @@
 # Vimfiles
 *.swp
+*.swo
 
 # Vagrant
 .vagrant/
